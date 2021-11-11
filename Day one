@@ -1,0 +1,178 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+
+
+
+int main()
+{
+	int num1, num2;
+	scanf("%d %d", &num1,&num2);
+	if (num1 > num2)
+		printf("%d %d\n", num2, num1);
+	else
+		printf("%d %d\n", num1, num2);
+		
+	return 0;
+}
+
+//#include<math.h>
+//int main()
+//{
+//	double a, b, c, disc, p, q,x1,x2;
+//	scanf("%lf %lf %lf", &a, &b, &c);
+//	disc = b * b - 4 * a * c;
+//	if(disc>=0)
+//	{
+//		p = -b / (2 * a);
+//		q = sqrt(disc) / (2 * a);
+//		x1 = p + q;
+//		x2 = p - q;
+//		printf("x1=%lf\nx2=%lf", x1, x2);
+//	}
+//	else
+//		printf("该函数无实根！");
+//
+//	return 0;
+//}
+
+//#include<math.h>
+//int main()    
+//{
+//	double a, b, c, disc;
+//	scanf("%lf %lf %lf", &a, &b, &c);
+//	disc = b * b - 4 * a * c;
+//	if (disc < 0)
+//		printf("00");
+//	else
+//	    {double p, q, x1, x2;
+//		p = sqrt(disc) /( 2.0 * a);
+//		q = -b /( 2.0 * a);
+//		x1 = p + q;
+//		x2 = q - p;
+//		printf("x1=%lf\n", x1);
+//		printf("x2=%lf\n", x2);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	double num = 1.5;
+//	double* base = &num;
+//	*base = 5;
+//	printf("%lf\n", num);
+//	printf("%p\n", base);
+//	printf("%d\n", sizeof(base));
+//	return 0;
+//}
+
+//int main()
+//{
+//	char ch = 'a';
+//	char* pc = &ch;
+//	printf("%p\n", pc);
+//	printf("%c\n", ch);
+//	return 0;
+//}
+//
+
+//int main()
+//{
+//	int a = 10;
+//	int b = 0;
+//	int* p = &a;//&--取地址符号
+//	/*printf("%p\n", p);
+//	printf("%p\n", &a);*/
+//	b=*p;//*--解引用操作符
+//	printf("b = %d", b);
+//	//变量用来存放地址的——指针变量（int*）
+//	//printf("%p", &a); 
+//	return 0;
+//}
+//求最大值：1、if-else  2、定义函数  3、宏
+
+//#include<stdio.h>
+//int Max(int x, int y)
+//{
+//	if (x > y)
+//		return x;
+//	else
+//		return y;
+//}
+//#define Max(x,y) (x>y?x:y);
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int max;
+//	scanf("%d %d", &a, &b);
+//	max = Max(a,b);
+//	printf("较大值是max=%d", max);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 100;
+//	int b = 209;
+//	int max = 0;
+//	max = (a > b ? a : b);
+//	printf("max=%d\n", max);
+//	return 0;
+//}
+ 
+//int main()
+//{
+//	int a = 10;
+//	int b;
+//	//b = a++;//后置++，先使用，后++
+//	b = ++a;//前置++，先++，再使用
+//	printf("a=%d\nb=%d\n", a, b);
+//	return 0;
+//}
+/*int Max(int x,int y)
+{
+	if (x > y)
+		return x;
+	else
+		return y;
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int max = 0;
+	scanf("%d %d", &a, &b);
+	max = Max(a,b);
+	printf("较大的数是%d\n",max);
+	return 0;
+}*/
+
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = a + b;
+//	
+//	scanf("%d %d", &a, &b);
+//	c = a + b;
+//	printf("c=%d", c);
+//	return 0;
+//}
+
+
+//enum Sex
+//{
+//	MALE,
+//	FEMALE
+//};
+////MALE/FEMALE - 枚举常量
+//int main()
+//{
+//	//enum Sex s = MALE 
+//	printf("%d\n",MALE); //得到的值为0.
+//	printf("%d\n",FEMALE);//得到的值为1.
+//	
+//	return 0;
+//}
