@@ -174,3 +174,223 @@ int main()
 //	
 //	return 0;
 //}
+
+
+//#define  _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+
+//int Max(int x,int y)
+//{
+//	if(x>y)
+//		return x;
+//	else
+//		return y;
+//}
+//int main()
+//{
+//	int a,b,max;
+//	max=Max(a,b);
+//	printf("较大的数是%d\n",max);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int sz=0;
+//	int arr[10]={0};//10个整型元素的数组
+//	printf("%d\n",sizeof(arr));//计算数组的大小
+//	sz = sizeof(arr)/sizeof(arr[0]);
+//	//计算数组元素个数
+//	//个数 = 数组总大小 / 每个元素的大小
+//	printf("%d\n",sizeof(arr[0]));
+//	printf("sz=%d\n",sz); 
+//	return 0;
+//}
+
+//int main()
+//{
+//	
+//	int arr[10] = {1,2,3,4,5,6,7,8,9,10};//定义一个存放10个整数数字的数组
+//	int i=0;
+//	while(i<10)
+//	{
+//		printf("%d\n",arr[i]);
+//		i++;
+//	}
+//	//printf("%d\n",arr[4]);//下标的方式访问元素
+//	//arr[下标]；
+//	//char ch[20];//定义字符
+//	//float arr2[5];// 
+//	return 0;
+//}
+
+//数组--要存储1-10的数字，怎么存储？
+//数组的定义：一组相同类型元素的集合
+
+
+//                                自定义函数-自己创造的函数
+//库函数-C语言本身提供的函数
+//int Add(int x,int y)//定义Add函数   
+//{
+//	int z=x+y;
+//	return z;
+//}//---{}内为函数体
+//
+////int main()
+//{
+//	int a,b,sum,sum1,sum2;
+//	scanf("%d %d",&a,&b);
+//	sum=Add(a,b);
+//	sum1=Add(5,6);
+//	sum2=Add(99,63);
+//	printf("sum=%d\n",sum);
+//	printf("sum=%d\n",sum1);
+//	printf("sum=%d\n",sum2);
+//
+//	return 0;
+//	/*int a,b,c;
+//	scanf("%d %d",&a,&b);
+//	c=a+b;
+//	printf("c=%d",c);
+//	return 0;*/
+//}
+
+//int main()
+//{
+//	int line = 0;
+//	printf("在大学\n");
+//	while(line<20000)
+//	{
+//		printf("敲一行代码*%d\n",line);
+//		line++;
+//	}
+//	if(line>=20000)
+//	    printf("你将年薪30w\n");
+//	return 0;
+//}
+//有while循环、for循环、do...while循环
+//循环语句！！！
+
+//int main()
+//{
+//	int input = 0;
+//	printf("进入大学\n");
+//	printf("你要好好学习吗？（1/0）>:");
+//	scanf("%d",&input);
+//	if(input==1)
+//		printf("你会获得一个好offer\n");
+//	else
+//		printf("等着搬砖！\n");
+//	return 0;
+//}
+
+//选择语句！！！！
+
+
+//#include<string.h>//需要使用到strlen函数，既引用头文件<string.h>
+//
+////int main()
+////{
+////	printf("%d\n",strlen("c:\test\32\test.c"));//输出结果为13.原因是：\t和\32是属于一个字符。
+////	//  \32--32是2个八进制数字
+////	return 0;
+////}
+
+
+//
+//int main()
+//{
+//	printf("%s\n","\"");
+//	return 0;
+//}
+
+//int main()
+//{
+//	char arr1[]="abc";
+//	char arr2[]={'a','b','c'};
+//	printf("%d\n",strlen(arr1));//strlen--string length 计算字符串长度
+//    printf("%d\n",strlen(arr2));
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	char arr1[]="abc";//数组
+//	//"abc"--'a','b','c','/0'--/0字符串结束的标志
+//	char arr2[]={'a','b','c',0};//改为{'a','b','c',0}既正常输出
+//	printf("%s\n",arr1);
+//	printf("%s\n",arr2);
+//
+//	return 0;
+//}
+
+
+
+
+//3、枚举常量
+//枚举：一一列举
+
+//例：性别：男 女
+//    三原色：红 黄 蓝
+
+//枚举关键 - enum
+//
+//enum Sex
+//{
+//	MALE,
+//	FEMALE
+//};
+////MALE/FEMALE - 枚举常量
+//int main()
+//{
+//	//enum Sex s = MALE 
+//	printf("%d\n",MALE); //得到的值为0.
+//	printf("%d\n",FEMALE);//得到的值为1.
+//	
+//	return 0;
+//}
+//enum Color
+//{
+//	RED,
+//	YELLOW,
+//	BLUE
+//};
+//int main ()
+//{
+//	enum Color color = BLUE;
+//	printf("%d\n",color);
+//
+//	return 0;
+//}
+
+
+///2、/#define 定义的标识符常量
+//#define MAX 10
+//
+//int main ()
+//{
+//	int arr[MAX] = {0};
+//	printf("%d\n",MAX);
+//	return 0;
+//}
+
+
+//1、int main()
+//{
+//	//const - 常变量
+//	const int n = 10;
+//	//int arr[10]={0}; //输入一个十个都是0的数。
+//	n = 20;//到这一步时会报错，原因是n被const限制，成为常变量，无法改变数值。
+//	/*int a,b,c;
+//	
+//	scanf("%d %d",&a,&b);
+//	
+//	c=a+b;
+//
+//	printf("c=%d\n",c);
+//*/
+//	return 0;
+//
+//}
