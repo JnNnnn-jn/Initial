@@ -2,6 +2,63 @@
 
 #include<stdio.h>
 
+#include<math.h>
+int main()
+{
+	double a, b, c, disc, x1, x2, p, q;
+	scanf("%lf %lf %lf", &a, &b, &c);
+	disc = b * b - 4 * a * c;
+	if (a == 0)
+	{
+		x1 = (-c / b);
+		x2 = (-c) / b;
+		printf("x1=x2=%d\n", x1);
+	}
+	else if (fabs(disc)<=1e-6)
+	{
+		x1 = (-b) / 2 * a;
+		x2 = (-b) / 2 * a;
+		printf("has two equal roots:%8.4f\n", x1);
+	}
+	else if (disc > 1e-6)
+	{
+		x1 = (-b + sqrt(disc)) / 2 * a;
+		x2 = (-b - sqrt(disc)) / 2 * a;
+		printf("has distinct real roots:%8.4f %8.4f\n", x1, x2);
+	}
+	else {
+		p = (-b) / 2 * a;
+		q = sqrt(-disc) / 2 * a;
+		printf("has complex roots:\n");
+		printf("%8.4f+%8.4fi\n", p, q);
+		printf("%8.4f-%8.4fi\n", p, q);
+	}
+	return 0;
+}
+
+
+//int main()
+//{
+//	int year;
+//	printf("enter year:");
+//	scanf("%d", &year);
+//	if(year%4==0)
+//	{
+//		if (year % 100!=0)
+//		{
+//			printf("该年是闰年！");
+//		}
+//		else if (year % 100 == 0)
+//		{
+//			if (year % 400 == 0)
+//				printf("该年是闰年！");
+//			else printf("该年不是闰年！");
+//		}
+//	}
+//	else printf("该年不是闰年！");
+//	return 0;
+//}
+
 int main()
 {
 	char grade;
