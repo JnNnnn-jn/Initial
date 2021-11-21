@@ -4,6 +4,58 @@
 #include<string.h>
 
 
+//我给你出一个1-1000的数，你来猜这个数。
+//二分查找，循环
+int main()
+{
+	printf("我给你出一个1-100的数，你来猜这个数。");
+	int a;
+	int b = 39;
+	printf("\n\n");
+	printf("                    ********************\n");
+	printf("                    ****\\ 1:play //****\n");
+	printf("                    ****\\ 2:exit //****\n");
+	printf("                    ********************\n");
+	printf("请输入你猜的数：");
+	scanf("%d", &a);
+	while (39 != a)
+	{
+		if (a > 39)
+		{
+			printf("猜大了！请重新输入：");
+			scanf("%d", &a);
+		}
+		else if (a < 39)
+		{
+			printf("猜小了！请重新输入：");
+			scanf("%d", &a);
+		}
+	}
+	printf("恭喜你！猜对了！\n");
+
+	return 0;
+}
+
+//将整数1234按顺序打印成1 2 3 4；
+//void print(unsigned int n)
+//{
+//	if (n > 9)
+//	{
+//		print(n / 10);
+//	}
+//	printf("%d ", n % 10);
+//}
+//
+//int main()
+//{
+//	unsigned int num;
+//	scanf("%d", &num);
+//	//递归-自己调用自己
+//	print(num);
+//	return 0;
+//}
+
+
 //int Add(int x, int y)
 //{
 //	int sum = x + y;
