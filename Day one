@@ -4,6 +4,61 @@
 #include<string.h>
 
 
+//int prime(int z)
+//{
+//	int n;
+//	for (n = 2; n <= z - 1; n++)
+//	{
+//		if (z % n == 0)
+//			return 0;
+//	}
+//	return 1;
+//	
+//}
+//int main()
+//{
+//	int a = 100;
+//	int c;
+//	for (a = 100; a <= 200; a++)
+//	{
+//		c=prime(a);
+//		if (c == 1)
+//			printf("%d是质数！\n", a);
+//	}
+//	return 0;
+//}
+//#include<math.h>
+//int is_prime(int n)
+//{
+//	for (int m = 2; m < n; m++)
+//	for (int m = 2; m <= sqrt(n); m++)
+//	{
+//		if (n % m == 0)
+//			return 0;
+//	}
+//	return 1;
+//}
+//int main()
+//{
+//	求100-200之间的素数
+//	int i;
+//	int amount = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		if (is_prime(i) == 1)
+//		{
+//			printf("%d是素数\n", i);
+//			amount++;
+//		}
+
+		//else printf("%d不是素数\n", i);
+//	}
+//	printf("有%d个素数\n", amount);
+//	return 0;
+//}
+
+
+
 int prime(int x)
 {
 	int z;
