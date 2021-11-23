@@ -4,6 +4,42 @@
 #include<string.h>
 
 
+int my_strlen(char* str)
+{
+	/*int count = 0;
+	while (*str != '\0')
+	{
+		count++;
+		str++;
+	}
+	return count;*/
+	//*********************************利用递归
+	if (*str != '\0')
+		return 1 + my_strlen(str + 1);//如果str的地址所指向的数不为“\0”,既返回“1+my_strlen(str+1)”，
+	//此时既再次调用my_strlen函数》》》既递归！
+	//str+1指的是str下一个地址！
+	else
+		return 0;
+}
+int main()
+{ 
+	char arr[] = "bit";
+	printf("%d\n", my_strlen(arr));
+	return 0;
+}
+
+//#include<stdio.h>
+//
+//int main()
+//{
+//	int a, b;
+//	scanf("%d %d", &a, &b);
+//	int c = a + b;
+//	printf("%d", c);
+//	return 0;
+//}
+
+
 //int prime(int z)
 //{
 //	int n;
