@@ -4,6 +4,82 @@
 #include<string.h>
 
 
+unsigned int Fab(int n)
+{
+	int num1 = 1, num2 = 1;
+	unsigned int i = 1;
+
+	while (n > 2)
+	{
+		i = num1 + num2;
+		num1 = num2;
+		num2 = i;
+		n--;
+	}
+	return i;
+}
+
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	unsigned int ret = Fab(n);
+
+	printf("%u\n", ret);
+	return 0;
+}
+
+//求第n个斐波那契数
+//利用递归可以求出值，但是效率太低！
+int count;
+//int Fab(int n)
+//{
+//	if (n == 3)
+//		count++;//统计计算机求第三个斐波那契数的次数！
+//	if (n <= 2)
+//		return 1;
+//	else
+//		return(Fab(n - 1) + Fab(n - 2));
+//}
+//int main()
+//{
+//	int n;
+//	scanf("%d", &n);
+//	int m = Fab(n);
+//	printf("%d\n", m);
+//	printf("count=%d\n", count);
+//	return 0;
+//}
+
+
+//int is_continue(int z)
+//{
+//	int i=1;
+//	if (z>=1)
+//	{
+//		i = z * is_continue(z - 1);
+//	}
+//	return i;
+//}
+//int main()
+//{
+//	int n;
+//	//n的阶乘：1*2*3*……*n
+//	scanf("%d", &n);
+//	/*int i=0;
+//	int ret = 1;
+//	for (i = 1; i <= n; i++)
+//	{
+//		ret = ret * i;
+//	}
+//	printf("%d\n", ret);*/
+//	is_continue(n);
+//	printf("%d\n", is_continue(n));
+//	return 0;
+//}
+
+
+
 int my_strlen(char* str)
 {
 	/*int count = 0;
