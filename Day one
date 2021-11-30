@@ -4,6 +4,154 @@
 #include<string.h>
 
 
+
+                                      //第9题
+//int main()
+//{
+//    int num;
+//    int bits = 1;
+//    int a;
+//    printf("请输入一个不大于5位的正整数：");
+//    scanf("%d", &num);
+//    while (num > 100000)
+//    {
+//        printf("输入错误，请重新输入：");
+//        scanf("%d", &num);
+//    }
+//    while (num > 9)
+//    {
+//        a = num % 10;
+//        num = num / 10;
+//        bits++;
+//        printf("%d ", a);
+//    }
+//    printf("%d\n", num);
+//    printf("\n");
+//    printf("该数有%d位",bits);
+//    return 0;
+//}
+
+
+                                       //第8题
+//int main()
+//{
+//    double fraction = 0;
+//    char grade ;
+//    printf("请输入成绩：");
+//    scanf("%lf", &fraction);
+//    while (fraction > 100)
+//    {
+//        printf("输入错误，请重新输入：");
+//        scanf("%lf", &fraction);
+//    }
+//    switch ((int)(fraction / 10))
+//    {
+//    case 10:
+//    case 9:grade = 'A'; break;
+//    case 8:grade = 'B'; break;
+//    case 7:grade = 'C'; break;
+//    case 6:grade = 'D'; break;
+//    case 5:
+//    case 4:
+//    case 3:
+//    case 2:
+//    case 1:grade = 'E'; break;
+//    }
+//    printf("%c\n",grade);
+//    return 0;
+//}
+
+
+                                       //第7题
+//int main()
+//{
+//    int x, y;
+//    printf("enter x:");
+//    scanf("%d", &x);
+//    y = -1;
+//    if (x != 0)
+//    {
+//        if (x > 0)
+//            y = 1;
+//        else y = -1;
+//    }
+//        else
+//            y = 0;
+//    printf("x = %d,y = %d\n", x, y);
+//    return 0;
+//}
+
+
+                                      //第6题
+//int main()
+//{
+//    int x,y;
+//    printf("请输入x的值：");
+//    scanf("%d", &x);
+//    
+//    if (x < 1)
+//    {
+//        y = x;
+//        printf("y = %d\n", y);
+//    }
+//    else if (x >= 10)
+//    {
+//        y = 3 * x - 11;
+//        printf("y = %d\n", y);
+//    }
+//    else
+//    {
+//        y = 2 * x - 1;
+//        printf("y = %d\n", y);
+//    }
+//    return 0;
+//}
+
+
+                                            //第5题
+//#include<math.h>
+//int main()
+//{
+//    int num = 0;
+//    printf("请输入一个小于1000的数：");
+//    scanf("%d", &num);
+//    while (num > 1000)
+//    {
+//        printf("你输入的数大于1000，请重新输入：");
+//        scanf("%d", &num);
+//    }
+//    int root = sqrt(num);
+//    printf("%d的平方根是：%d\n", num, root);
+//    return 0;
+//}
+
+
+                                             //第4题
+//int Max(int a, int b, int c)
+//{
+//	if (a > b)
+//	{
+//		if (a > c)
+//			return a;
+//		else return c;
+//	}
+//	else if (a > c)
+//		return b;
+//	else if (b > c)
+//		return b;
+//	else return c;
+//}
+//int main()
+//{
+//	int a, b, c;
+//	scanf("%d %d %d", &a, &b, &c);
+//	int max = Max(a, b, c);
+//	printf("max = %d\n", max);
+//	return 0;
+//}
+
+
+
 //数组名是什么？
 //数组名是数组首元素的地址
 //但有两个例外：
