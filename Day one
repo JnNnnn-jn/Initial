@@ -4,6 +4,77 @@
 #include<string.h>
 
 
+                                        //P107_选择结构课后习题
+#include<stdio.h>
+
+                                      //第12题
+int main()
+{
+    double x, y;
+    scanf("%lf %lf", &x, &y);
+    double x1 = 2, y1 = 2;
+    double x2 = 2, y2 = -2;
+    double x3 = -2, y3 = -2;
+    double x4 = -2, y4 = 2;
+    double d1 = (x - x1) * (x - x1) + (y - y1) * (y - y1);
+    double d2 = (x - x2) * (x - x2) + (y - y2) * (y - y2);
+    double d3 = (x - x3) * (x - x3) + (y - y3) * (y - y3);
+    double d4 = (x - x4) * (x - x4) + (y - y4) * (y - y4);
+    if (d1 > 1 && d2 > 1 && d3 > 1 && d4 > 1)
+    {
+        printf("0m\n");
+    }
+    else printf("10m\n");
+    return 0;
+}
+
+
+                                      //第11题
+//int main()
+//{
+//    int num1, num2, num3, num4;
+//    scanf("%d %d %d %d", &num1, &num2, &num3, &num4);
+//    int i = 0;
+//    if (num1 > num2)
+//    {
+//        i = num1;
+//        num1 = num2;
+//        num2 = i;
+//    }
+//    if (num1 > num3)
+//    {
+//        i = num1;
+//        num1 = num3;
+//        num3 = i;
+//    }
+//    if (num1 > num4)
+//    {
+//        i = num1;
+//        num1 = num4;
+//        num4 = i;
+//    }
+//    if (num2 > num3)
+//    {
+//        i = num2;
+//        num2 = num3;
+//        num3 = i;
+//    }
+//    if (num2 > num4)
+//    {
+//        i = num2;
+//        num2 = num4;
+//        num4 = i;
+//    }
+//    if (num3 > num4)
+//    {
+//        i = num3;
+//        num3 = num4;
+//        num4 = i;
+//    }
+// 
+//    printf("%d %d %d %d\n", num1, num2, num3, num4);
+//    return 0;
+//}
 
 
 
